@@ -565,17 +565,22 @@ OAUTH_PROVIDERS = [                                     #added
 
 OBTAIN consumer_key AND consumer_secret for the above from Google cloud console: Follow the given steps:-
 
-                          Go to https://console.cloud.google.com
 
-create a new project
 
-In navigation menu select APIs and Services
+Go to https://console.cloud.google.com
+
+Create a new project
+
+In navigation menu select 'APIs and Services'.
 
 Select 'Credentials'
-Create credential and give http://localhost:8080 under Authorized JavaScript origins and http://localhost:8080/oauth-authorized/google 
-under Authorized redirect URIs
+Select 'Create credential' and give http://localhost:8080 under 'Authorized JavaScript origins' and http://localhost:8080/oauth-authorized/google 
+under 'Authorized redirect URIs'.
 
-Select OAuth consent screen and give any name under Application name.
+Select 'OAuth consent screen' and give any name under 'Application name'.
+
+
+*****************************************************************************************************************************
 
 
 
