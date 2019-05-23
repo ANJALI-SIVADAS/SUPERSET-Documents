@@ -12,7 +12,7 @@ superset/models/helpers.py
 
 *******************************************************************************************************************************
 
-    Made the following change to the above file:-
+    Made the following code change to the above file:-
 -----------------------------------------------------
 
 @renders('modified')                              
