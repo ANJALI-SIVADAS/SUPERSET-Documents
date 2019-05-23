@@ -1,0 +1,30 @@
+BUG = By clicking on 'Last Modified', showing error.
+
+Bug fixed by making the following change:-
+
+*******************************************************************************************************************************    
+    
+    Go to the following file:-
+----------------------------------
+
+superset/models/helpers.py
+
+
+*******************************************************************************************************************************
+
+    Made the following change to the above file:-
+-----------------------------------------------------
+
+@renders('modified')                              
+    def modified(self):
+        return humanize.naturaltime(datetime.now() - self.changed_on)     
+        
+        to      
+      
+@renders('changed_on')                              
+    def modified(self):
+        return humanize.naturaltime(datetime.now() - self.changed_on)
+
+********************************************************************************************************************************
+
+
