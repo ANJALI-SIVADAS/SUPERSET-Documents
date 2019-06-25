@@ -1,0 +1,72 @@
+
+TASK 1:  Bring change in query by making changes in the code
+-----------------------------------------------------------------------------------------------------------------
+
+Task: 
+The "View Query" in UI superset, shows the query for that specific chart. Task is to make changes in the query like(eg: groupby age to groupby year). This has to be done by making changes in the code.
+
+Solution:
+Go to file supeset/viz.py
+
+class BaseViz(object):
+	def query_obj(self);
+	
+	make changes there, like ;
+	d['groupby'] = ['gender']
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TASK 2: deck_hex chart grid issue
+--------------------------------------------------------------
+
+
+issue:  For minimum value of count in deck_hex chart, the grid is shown as a dot('zero'), not growing.
+task:   For minimum value of count in deck_hex chart, the grid must grow, should not be a dot.
+
+Solution:
+
+path:   superset/assests/src/visualizations/deckgl/layers/hex.jsx
+
+Under
+ return new HexagonLayer({
+add,
+	elevationRange: [100,1000]
+	
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TASK 3:  Add css file to custom themes in fabmanager
+--------------------------------------------------------------------------------------------------
+
+SOLUTION: Done by adding template as given below.
+Refer link : https://flask-appbuilder.readthedocs.io/en/latest/templates.html  and do the same.
+
+Create template html file.(mybase.html)
+Create folder: myapp/app/static/css/ , and add css files there.
+Call the html file in the init file.(base_template)
+
+OR
+
+Copy paste the init.html file directly from site-packages to your fabmanager with the same path. And make change in the path under appbuilder_theme.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
